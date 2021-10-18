@@ -1,0 +1,59 @@
+[package]
+name = "signature_benchmark"
+version = "0.1.0"
+authors = ["Quentin Kniep <hello@quentinkniep.com>"]
+edition = "2018"
+
+[dependencies]
+aes = { version = "0.7", features = ["ctr"] }
+blake3 = "0.3"
+ed25519-dalek = "1"
+getrandom = "0.2"
+hmac = "0.10"
+pqcrypto = "0.13"
+rand = "0.7"
+rand_chacha = "0.3"
+rayon = "1"
+sha2 = "0.9"
+sha3 = "0.9"
+siphasher = "0.3"
+subtle = "2"
+
+[dev-dependencies]
+criterion = { version = "0.3", features = ["html_reports"] }
+
+[[bench]]
+name = "dilithium"
+harness = false
+
+[[bench]]
+name = "ecdsa"
+harness = false
+
+[[bench]]
+name = "falcon"
+harness = false
+
+[[bench]]
+name = "hmac"
+harness = false
+
+[[bench]]
+name = "kyber"
+harness = false
+
+[[bench]]
+name = "merkle"
+harness = false
+
+[[bench]]
+name = "otp"
+harness = false
+
+[[bench]]
+name = "sdmss"
+harness = false
+
+[[bench]]
+name = "wots"
+harness = false
