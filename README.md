@@ -1,5 +1,6 @@
 # PQ FIDO & sd-MSS
 Exploring possibility of PQ FIDO Security Keys based on sd-MSS, a novel few-time signature scheme.
+This was created as part of my Master's thesis. The thesis can be found on the [university website](https://sar.informatik.hu-berlin.de/research/publications/SAR-PR-2021-05/SAR-PR-2021-05_.pdf).
 
 In `scripts` there are Python scripts for calculating various estimates, creating tables and graphs.
 
